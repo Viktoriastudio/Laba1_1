@@ -67,10 +67,10 @@
         деревообрабатывающей промышленности, развита сеть образовательных и
         культурных учреждений.
     </p>
-     <img src="img/img1_1.jpg" alt="Вечерний город" height="600" width="500">
-     <img src="img/img1_2.jpg" alt="Зимний вайб" height="600" width="500">
-     <img src="img/img1_4.jpg" alt="Природа" height="600" width="500">
-     <img src="img/img1_5.jpg" alt="Природа" height="600"width="500">
+     <img src="img1_1.jpg" alt="Вечерний город" height="600" width="500">
+     <img src="img1_2.jpg" alt="Зимний вайб" height="600" width="500">
+     <img src="img1_4.jpg" alt="Природа" height="600" width="500">
+     <img src="img1_5.jpg" alt="Природа" height="600"width="500">
     <hr>
 
     <!-- 7. Дополнительная информация -->
