@@ -137,10 +137,12 @@
           Здесь работают предприятия пищевой, строительной и деревообрабатывающей промышленности, 
           развита сеть образовательных и культурных учреждений.
       </p>
-      <img src="img1_1.jpg" alt="Вечерний город" height="300" width="200">
-      <img src="img1_2.jpg" alt="Вечерний город" height="300" width="200">
-      <img src="img1_4.jpg" alt="Природа" height="300" width="200">
-      <img src="img1_5.jpg" alt="Природа" height="300" width="200">
+      <center>
+       <img src="img1_1.jpg" alt="Вечерний город" height="300" weight="300">
+      <img src="img1_2.jpg" alt="Вечерний город" height="300" weight="300">
+      <img src="img1_4.jpg" alt="Природа" height="300" weight="300">
+      <img src="img1_5.jpg" alt="Природа" height="300" weight="300"> 
+      </center>
       <hr>
 
       <!-- 7. Дополнительная информация -->
