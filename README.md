@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!dOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
