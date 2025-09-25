@@ -3,125 +3,179 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Котики</title>
+  <title>Обязанности по дому каждого кота</title>
   <style>
     :root {
-      --bg:#f0f8ff;
-      --card:#fff;
-      --accent:#ff9ecb;
-      --active:#e75480;
-      --text:#222;
+      --bg: #fefafc;
+      --card: #fff;
+      --accent: #ecb4c6;
+      --text: #222;
+      --active: #ea657b;
     }
     body {
       font-family: system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;
-      line-height:1.5;
-      background:linear-gradient(120deg,#fff 0%,var(--bg) 100%);
-      color:var(--text);
-      margin:0;
-      padding:20px;
+      line-height: 1.5;
+      background: linear-gradient(120deg,#fff 0%,var(--bg) 100%);
+      color: var(--text);
+      margin: 0;
+      padding: 20px;
     }
 
-    /* Верхняя панель */
+    /* Верхняя панель с кнопками */
     .top-nav {
-      display:flex;
-      justify-content:center;
-      gap:12px;
-      margin-bottom:20px;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
     }
     .nav-btn {
-      padding:10px 22px;
-      border-radius:25px;
-      border:none;
-      font-weight:bold;
-      cursor:pointer;
-      background:var(--accent);
-      color:#222;
-      transition:all 0.3s ease;
-      box-shadow:0 4px 12px rgba(0,0,0,.1);
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      background: var(--accent);
+      color: #222;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
     }
     .nav-btn:hover {
-      background:var(--active);
-      color:#fff;
-      transform:translateY(-2px);
+      background: var(--active);
+      color: #fff;
+      transform: translateY(-2px);
     }
     .nav-btn.active {
-      background:var(--active);
-      color:#fff;
-      box-shadow:0 6px 16px rgba(0,0,0,.2);
+      background: var(--active);
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(0,0,0,.2);
     }
 
-    .card {
-      background:var(--card);
-      border-radius:14px;
-      padding:18px;
-      box-shadow:0 8px 30px rgba(0,0,0,.06);
-      max-width:1000px;
-      margin:0 auto 20px;
+    header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--card);
+      padding: 15px;
+      border-radius: 14px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,.08);
     }
     h1 {
-      margin:0;
-      font-size:28px;
-      text-align:center;
-      color:var(--active);
+      margin: 0;
+      font-size: 28px;
+      text-align: center;
+      color: var(--active);
     }
-    h2 {margin-top:12px;color:#444}
+    main {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 14px;
+      padding: 18px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.06);
+      margin-top: 18px;
+    }
     ol li {
-      margin:10px 0;
-      padding:8px;
-      border-left:4px solid var(--accent);
-      background:linear-gradient(180deg,rgba(236,180,198,.05),transparent);
+      margin: 10px 0;
+      padding: 8px;
+      border-left: 4px solid var(--accent);
+      background: linear-gradient(180deg,rgba(236,180,198,.05),transparent);
     }
     aside img {
-      width:100%;
-      border-radius:8px;
-      display:block;
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin-bottom: 10px;
     }
     footer {
-      margin-top:18px;
-      color:#666;
-      font-size:13px;
-      text-align:center;
+      margin-top: 18px;
+      color: #666;
+      font-size: 13px;
+      text-align: center;
+    }
+    .small {
+      font-size: 13px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <!-- Навигация -->
+  <!-- Панель навигации -->
   <div class="top-nav">
     <button class="nav-btn active" onclick="location.href='cats.html'">Котики</button>
     <button class="nav-btn" onclick="location.href='gorod.html'">Мой город</button>
   </div>
 
-  <header class="card">
-    <h1>Обязанности по дому каждого кота</h1>
-    <p class="meta" style="font-size:18px;color:#555;text-align:center;">
-      Весёлый список правил ухода за человеком
-    </p>
+  <header>
+    <div style="flex:1">
+      <h1>Обязанности по дому каждого кота</h1>
+      <p style="font-size: 18px; color: #555; text-align:center;">
+        Весёлый список правил ухода за человеком — оформлен как веб-страница
+      </p>
+    </div>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/256/1998/1998592.png" 
+           alt="Кот-логотип" title="Кот — логотип" width="96" height="96">
+    </div>
   </header>
 
   <main class="card">
-    <h2>Список обязанностей</h2>
-    <ol>
-      <li>Кот должен <strong>отсыпаться</strong> за человека.</li>
-      <li>Кот защищает человека от комнатных растений.</li>
-      <li>Кот поддерживает человека в форме — разбрасывая вещи.</li>
-      <li>Кот проверяет холодильник, даже если хозяин против.</li>
-      <li>Кот каждое утро напоминает пословицу «Кто рано встает, тому Бог дает».</li>
-    </ol>
-    <hr>
-    <h2>Мои коты</h2>
-    <div>
+    <section>
+      <h2>Введение</h2>
+      <p><strong>Коротко:</strong> кот — это не просто питомец, это член семьи с набором <em>важных обязанностей</em>. Ниже приведён список.</p>
+      <hr>
+      <h3>Список обязанностей</h3>
+      <ol>
+        <li>Кот должен <strong>отсыпаться</strong> за человека и всех соседей.</li>
+        <li>Кот должен защищать человека от комнатных растений.</li>
+        <li>Кот поддерживает форму хозяина, разбрасывая вещи.</li>
+        <li>Кот проводит ревизию холодильника.</li>
+        <li>Кот ночью проверяет, нет ли змей под одеялом.</li>
+        <li>Кот тренируется к цирковым выступлениям.</li>
+        <li>Кот помогает стелить постель.</li>
+        <li>Кот должен будить человека прыжками на голову.</li>
+        <li>Кот напоминает пословицу «Кто рано встаёт, тому Бог даёт».</li>
+        <li>Кот делится мехом и едой.</li>
+        <li>Кот поёт песни для радости.</li>
+        <li>Кот проверяет шкафы и ящики.</li>
+        <li>Кот отгоняет плохие сны.</li>
+        <li>Кот исследует коробки и пакеты.</li>
+        <li>Кот урчит, заглушая шум с улицы.</li>
+      </ol>
+
+      <h3>Полезные ссылки</h3>
+      <ul>
+        <li><a href="https://www.purina.ru/find-a-pet/cat-breeds/shotlandskaya-pryamoukhaya-koshka" target="_blank">Статья о породе</a></li>
+        <li><a href="https://royalcanin.ru/cat-article" target="_blank">Статьи о кошках</a></li>
+        <li><a href="https://www.youtube.com/watch?v=TzdwyP_XVvg" target="_blank">YouTube</a></li>
+      </ul>
+      <p class="small"><em>Каждый кот знает своё место — чаще всего в сердце хозяина.</em></p>
+    </section>
+
+    <aside>
       <h3>Милка</h3>
-      <img src="img1.jpg" alt="Фото кота">
-      <h3>Наоми</h3>
-      <img src="img3.jpg" alt="Фото кота">
-      <h3>Рыжик</h3>
-      <img src="img4.jpg" alt="Фото кота">
-    </div>
+      <img src="img/img1.jpg" alt="Кот Милка">
+      <h4>Наоми</h4>
+      <img src="img/img3.jpg" alt="Кот Наоми">
+      <h5>Рыжик</h5>
+      <img src="img/img4.jpg" alt="Кот Рыжик">
+    </aside>
   </main>
 
   <footer>
-    <p>2025 — Демонстрация HTML</p>
+    <p>2025 — Демонстрация задания по HTML</p>
   </footer>
+
 </body>
 </html>
